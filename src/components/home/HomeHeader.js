@@ -1,5 +1,6 @@
 import "../../stylesheets/HomeHeader.css";
-import pattern from "../../assets/looper-pattern.svg";
+import Button from "../Button";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 function HomeHeader() {
   return (
@@ -14,6 +15,18 @@ function HomeHeader() {
         <section className="homeHeaderSections">
           <h1>Agustin Manelli</h1>
           <p>front-end developer</p>
+          <div className="homeHeader_buttonsContainer">
+            <Button
+              icon={<AiFillGithub />}
+              name="GitHub"
+              link="https://github.com/AgustinManelli"
+            />
+            <Button
+              icon={<AiFillLinkedin />}
+              name="linkedin"
+              link="https://www.linkedin.com/in/agustinmanelli/"
+            />
+          </div>
         </section>
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
@@ -24,6 +37,10 @@ function HomeHeader() {
             </div>
           </div>
         </section>
+        <footer className="homeHeaderfooterSection">
+          <section></section>
+          <section></section>
+        </footer>
       </div>
     </>
   );
