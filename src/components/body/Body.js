@@ -2,7 +2,9 @@ import "../../stylesheets/Body.css";
 function Body() {
   return (
     <div className="bodyContainer">
-      <div className="bodyTimeline"></div>
+      <div className="timelineContainer">
+        <div className="timelineElement"></div>
+      </div>
     </div>
   );
 }

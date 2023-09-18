@@ -4,11 +4,11 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 function HomeHeader() {
   return (
-    <>
+    <div style={{ overflow: "hidden", width: "100vw" }}>
       <div class="wrapper">
-        <div className="gradient gradient-1"></div>
-        <div className="gradient gradient-2"></div>
-        <div className="gradient gradient-3"></div>
+        <div class="gradient gradient-1"></div>
+        <div class="gradient gradient-2"></div>
+        <div class="gradient gradient-3"></div>
       </div>
       <div className="homeHeaderPattern"></div>
       <div className="homeHeaderContainer">
@@ -42,7 +42,7 @@ function HomeHeader() {
           <section></section>
         </footer>
       </div>
-    </>
+    </div>
   );
 }
 

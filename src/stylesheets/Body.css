@@ -1,16 +1,26 @@
 .bodyContainer {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
 }
-.bodyTimeline {
-  width: 100%;
-  height: 100%;
+.timelineContainer {
+  margin-top: 150px;
+  position: relative;
   max-width: 1020px;
-  border-left: solid rgba(68, 0, 255, 0.3) 2px;
+  width: 100%;
+  height: 100vh;
+}
+.timelineContainer::before {
+  position: absolute;
+  content: " ";
+  left: 18px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #13001b;
 }
