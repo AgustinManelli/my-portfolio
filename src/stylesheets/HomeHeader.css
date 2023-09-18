@@ -1,12 +1,12 @@
 .homeHeaderContainer {
   background-color: black;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 1;
 }
 .homeHeaderSections {
   width: 100%;
@@ -188,7 +188,7 @@ h1 {
   position: absolute;
   width: 90vw;
   height: 100px;
-  bottom: -50px;
+  bottom: 0px;
   z-index: 20;
   display: grid;
   grid-template-columns: 70% 30%;
