@@ -1,17 +1,19 @@
 import "../../stylesheets/HomeHeader.css";
+import pattern from "../../assets/looper-pattern.svg";
 
 function HomeHeader() {
   return (
     <>
       <div class="wrapper">
-        <div class="gradient gradient-1"></div>
-        <div class="gradient gradient-2"></div>
-        <div class="gradient gradient-3"></div>
+        <div className="gradient gradient-1"></div>
+        <div className="gradient gradient-2"></div>
+        <div className="gradient gradient-3"></div>
       </div>
+      <div className="homeHeaderPattern"></div>
       <div className="homeHeaderContainer">
         <section className="homeHeaderSections">
           <h1>Agustin Manelli</h1>
-          <h2>asds</h2>
+          <p>front-end developer</p>
         </section>
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
