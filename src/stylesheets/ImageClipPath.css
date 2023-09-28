@@ -1,0 +1,23 @@
+.ImageClipPathContainer {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.ImageClipPathBlurred {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.ImageClipPath {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: url(#squircle);
+  z-index: 10;
+}
