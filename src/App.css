@@ -4,10 +4,3 @@ body {
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
 }
-
-.clip-img {
-  object-fit: cover;
-  object-position: 50%;
-  -webkit-clip-path: url(#squircle);
-  clip-path: url(#squircle);
-}

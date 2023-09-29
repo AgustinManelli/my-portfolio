@@ -1,7 +1,9 @@
-import "../../stylesheets/HomeHeader.css";
+import "./HomeHeader.css";
 import Button from "../Button";
 import { AiFillGithub, AiFillLinkedin, AiOutlineFile } from "react-icons/ai";
 import ImageClipPath from "../ImageClipPath";
+import myphoto from "../../assets/271193082_426444742538952_146421189548635760_n.jpeg";
+import ButtonDownload from "../ButtonDownload";
 
 function HomeHeader() {
   return (
@@ -36,21 +38,15 @@ function HomeHeader() {
               name="linkedin"
               link="https://www.linkedin.com/in/agustinmanelli/"
             />
-            <Button
-              icon={<AiOutlineFile />}
-              name="Curriculum Vitae"
-              link="https://www.linkedin.com/in/agustinmanelli/"
-            />
           </div>
+          <ButtonDownload
+            icon={<AiOutlineFile style={{ width: "20px", height: "20px" }} />}
+            title="Download CV"
+          />
         </section>
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
-            <ImageClipPath
-              src="https://media.tycsports.com/files/2023/06/24/584696/messi_862x485.webp?v=1"
-              alr="image"
-              w="250px"
-              h="250px"
-            />
+            <ImageClipPath src={myphoto} alr="image" w="250px" h="250px" />
             <div>
               <p>
                 Ea cillum cupidatat fugiat duis do qui ad cillum sunt commodo.

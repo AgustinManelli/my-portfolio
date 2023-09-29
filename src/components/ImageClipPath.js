@@ -11,7 +11,7 @@ function ImageClipPath(props) {
         </defs>
       </svg>
       <div
-        className="ImageClipPath"
+        className="ImageClipPath clip-img"
         style={{
           backgroundImage: `url(${props.src})`,
           height: `${props.h}`,
