@@ -5,14 +5,14 @@ import ImageClipPath from "../ImageClipPath";
 import myphoto from "../../assets/271193082_426444742538952_146421189548635760_n.jpeg";
 import ButtonDownload from "../ButtonDownload";
 import EducationTimeline from "./EducationTimeline";
+import FloatingSection from "./FloatingSection.js";
 
 function HomeHeader() {
   return (
     <div
       style={{
-        overflow: "hidden",
         width: "100vw",
-        backgroundColor: "#000",
+        height: "fit-content",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -52,16 +52,17 @@ function HomeHeader() {
         </section>
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
-            <ImageClipPath src={myphoto} alr="image" w="200px" h="200px" />
+            <ImageClipPath src={myphoto} alt="image" w="200px" h="200px" />
             <p style={{ marginTop: "20px" }}>
               Fugiat irure sint tempor ullamco ullamco Lorem fugiat laborum
               voluptate ullamco est.
             </p>
-            <p>Education</p>
+            <p style={{ marginTop: "20px" }}>Education</p>
             <EducationTimeline />
           </div>
         </section>
       </div>
+      {/* <FloatingSection /> */}
     </div>
   );
 }

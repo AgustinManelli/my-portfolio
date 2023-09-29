@@ -15,6 +15,9 @@ function FloatingSection() {
         justifyContent: "center",
         alignItems: "center",
         height: "fit-content",
+        position: "absolute",
+        bottom: "-30px",
+        zIndex: "1000",
       }}
     >
       <footer className="homeHeaderfooterSection">
@@ -26,7 +29,7 @@ function FloatingSection() {
           <FaJsSquare className="homeHeaderFooterIcon" />
           <FaGit className="homeHeaderFooterIcon" />
         </section>
-        <section>
+        <section style={{ marginLeft: "20px" }}>
           <p className="homeHeaderFooterSectionTitle">design</p>
           <SiAdobephotoshop className="homeHeaderFooterIcon" />
           <SiAdobeillustrator className="homeHeaderFooterIcon" />

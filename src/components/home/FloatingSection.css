@@ -1,20 +1,16 @@
 .homeHeaderfooterSection {
-  position: relative;
   width: 90vw;
   height: 60px;
   z-index: 20;
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-column-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
   max-width: 1024px;
   z-index: 100;
-  transform: translateY(-30px);
 }
 
 .homeHeaderfooterSection section {
-  position: relative;
   backdrop-filter: blur(50px) saturate(200%);
   border-radius: 10px;
   border: 1px solid transparent;

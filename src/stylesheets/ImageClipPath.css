@@ -23,4 +23,19 @@
   background-size: cover;
   clip-path: url(#squircle);
   z-index: 10;
+  filter: blur(10px);
+  transform: scale(0.9);
+  animation: blurredInitialImage 0.5s forwards;
+}
+
+@keyframes blurredInitialImage {
+  0% {
+    filter: blur(10px);
+    transform: scale(0.9);
+  }
+
+  100% {
+    filter: blur(0px);
+    transform: scale(1);
+  }
 }
