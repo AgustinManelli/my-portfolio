@@ -28,7 +28,7 @@ function HomeHeader() {
       <div className="homeHeaderContainer">
         <section className="homeHeaderSections">
           <div style={{ textAlign: "center" }}>
-            <h1>Agustin Manelli</h1>
+            <h1>Agustín Manelli</h1>
             <p>frontend developer.</p>
           </div>
           <div className="homeHeader_buttonsContainer">

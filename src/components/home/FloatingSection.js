@@ -1,4 +1,10 @@
 import "./FloatingSection.css";
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaGit } from "react-icons/fa";
+import {
+  SiAdobephotoshop,
+  SiAdobeaftereffects,
+  SiAdobeillustrator,
+} from "react-icons/si";
 
 function FloatingSection() {
   return (
@@ -12,8 +18,20 @@ function FloatingSection() {
       }}
     >
       <footer className="homeHeaderfooterSection">
-        <section></section>
-        <section></section>
+        <section>
+          <p className="homeHeaderFooterSectionTitle">web-dev</p>
+          <FaReact className="homeHeaderFooterIcon" />
+          <FaHtml5 className="homeHeaderFooterIcon" />
+          <FaCss3Alt className="homeHeaderFooterIcon" />
+          <FaJsSquare className="homeHeaderFooterIcon" />
+          <FaGit className="homeHeaderFooterIcon" />
+        </section>
+        <section>
+          <p className="homeHeaderFooterSectionTitle">design</p>
+          <SiAdobephotoshop className="homeHeaderFooterIcon" />
+          <SiAdobeillustrator className="homeHeaderFooterIcon" />
+          <SiAdobeaftereffects className="homeHeaderFooterIcon" />
+        </section>
       </footer>
     </section>
   );

@@ -14,8 +14,27 @@
 }
 
 .homeHeaderfooterSection section {
+  position: relative;
   backdrop-filter: blur(50px) saturate(200%);
   border-radius: 10px;
   border: 1px solid transparent;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homeHeaderFooterSectionTitle {
+  position: absolute;
+  color: #fff;
+  top: -16px;
+  margin: 0;
+  opacity: 0.1;
+}
+
+.homeHeaderFooterIcon {
+  color: aliceblue;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
 }
