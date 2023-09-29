@@ -42,6 +42,8 @@ function HomeHeader() {
           <ButtonDownload
             icon={<AiOutlineFile style={{ width: "20px", height: "20px" }} />}
             title="Download CV"
+            file={myphoto}
+            filename="AgustinManelli_CV_2023"
           />
         </section>
         <section className="homeHeaderSections">
