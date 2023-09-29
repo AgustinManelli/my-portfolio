@@ -53,11 +53,11 @@ function HomeHeader() {
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
             <ImageClipPath src={myphoto} alr="image" w="200px" h="200px" />
-            {/* MAQUETADO DE EDUCACIÓN */}
-            <p>
+            <p style={{ marginTop: "20px" }}>
               Fugiat irure sint tempor ullamco ullamco Lorem fugiat laborum
               voluptate ullamco est.
             </p>
+            <p>Education</p>
             <EducationTimeline />
           </div>
         </section>

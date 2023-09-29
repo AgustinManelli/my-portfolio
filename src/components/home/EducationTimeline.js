@@ -13,7 +13,12 @@ function EducationTimeline() {
         <div className="EducationTimelineElement">
           <div className="EducationTimelineElement_circle"></div>
           <p className="EducationTimelineElement_time">2022-2023</p>
-          <p className="EducationTimelineElement_title">React certificate</p>
+          <p
+            className="EducationTimelineElement_title"
+            style={{ animationDelay: "0.3s" }}
+          >
+            React certificate
+          </p>
         </div>
       </div>
     </div>

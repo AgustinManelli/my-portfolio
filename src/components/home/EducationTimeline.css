@@ -3,6 +3,7 @@
   width: fit-content;
   height: fit-content;
   margin-left: 30px;
+  margin-top: 10px;
 }
 .EducationTimelineContainer::before {
   content: "";
@@ -11,7 +12,19 @@
   height: 100%;
   background-color: aliceblue;
   left: 0px;
+  animation-name: TimelineAnimation1;
+  animation-duration: 1s;
 }
+
+@keyframes TimelineAnimation1 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
 .EducationTimeline {
   position: relative;
   padding-left: 20px;
@@ -33,7 +46,19 @@
   color: rgb(98, 98, 98, 0.4);
 }
 .EducationTimelineElement_title {
+  width: 0%;
   font-size: 14px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  animation: TimelineAnimation2 1s forwards;
+}
+@keyframes TimelineAnimation2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .EducationTimelineElement_circle {
   position: absolute;
