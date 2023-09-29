@@ -1,6 +1,6 @@
 .homeHeaderContainer {
-  background-color: black;
   width: 100vw;
+  max-width: 1024px;
   height: 90vh;
   display: flex;
   flex-direction: row;
@@ -35,14 +35,18 @@ h1 {
 }
 
 .homeHeaderSubSections {
-  width: 80%;
-  height: 80%;
+  width: 65%;
+  height: 65%;
   border-radius: 10px;
   backdrop-filter: blur(16px) saturate(1.8);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  overflow: hidden;
 }
 
 .profilePhoto {

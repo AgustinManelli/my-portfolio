@@ -9,7 +9,7 @@
   bottom: 0;
   left: 0;
   overflow: visible;
-  filter: blur(100px);
+  filter: blur(60px);
   z-index: 0;
 }
 

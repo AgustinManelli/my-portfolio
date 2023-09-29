@@ -5,7 +5,16 @@ import ImageClipPath from "../ImageClipPath";
 
 function HomeHeader() {
   return (
-    <div style={{ overflow: "hidden", width: "100vw" }}>
+    <div
+      style={{
+        overflow: "hidden",
+        width: "100vw",
+        backgroundColor: "#000",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <div className="wrapper">
         <div className="gradient gradient-1"></div>
         <div className="gradient gradient-2"></div>
@@ -43,17 +52,19 @@ function HomeHeader() {
               h="250px"
             />
             <div>
-              <p>lorem ipsum</p>
-              <p>lorem ipsum</p>
-              <p>lorem ipsum</p>
+              <p>
+                Ea cillum cupidatat fugiat duis do qui ad cillum sunt commodo.
+                Eu magna aliquip proident pariatur. Incididunt esse Lorem quis
+                eiusmod ad qui tempor veniam sunt ullamco.
+              </p>
             </div>
           </div>
         </section>
-        <footer className="homeHeaderfooterSection">
-          <section></section>
-          <section></section>
-        </footer>
       </div>
+      <footer className="homeHeaderfooterSection">
+        <section></section>
+        <section></section>
+      </footer>
     </div>
   );
 }
