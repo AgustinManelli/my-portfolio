@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineFile } from "react-icons/ai";
 import ImageClipPath from "../ImageClipPath";
 import myphoto from "../../assets/271193082_426444742538952_146421189548635760_n.jpeg";
 import ButtonDownload from "../ButtonDownload";
+import EducationTimeline from "./EducationTimeline";
 
 function HomeHeader() {
   return (
@@ -49,13 +50,8 @@ function HomeHeader() {
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
             <ImageClipPath src={myphoto} alr="image" w="250px" h="250px" />
-            <div>
-              <p>
-                Ea cillum cupidatat fugiat duis do qui ad cillum sunt commodo.
-                Eu magna aliquip proident pariatur. Incididunt esse Lorem quis
-                eiusmod ad qui tempor veniam sunt ullamco.
-              </p>
-            </div>
+            {/* MAQUETADO DE EDUCACIÓN */}
+            <EducationTimeline />
           </div>
         </section>
       </div>

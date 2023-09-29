@@ -1,0 +1,41 @@
+.EducationTimelineContainer {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.EducationTimelineContainer::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: aliceblue;
+  left: 0px;
+}
+.EducationTimeline {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.EducationTimelineElement {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.EducationTimelineElement_time {
+  position: absolute;
+  left: -110px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(98, 98, 98);
+}
+.EducationTimelineElement_circle {
+  position: absolute;
+  left: -24px;
+  background-color: aqua;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
