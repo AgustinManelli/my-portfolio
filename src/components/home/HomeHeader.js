@@ -62,7 +62,7 @@ function HomeHeader() {
           </div>
         </section>
       </div>
-      {/* <FloatingSection /> */}
+      <FloatingSection />
     </div>
   );
 }

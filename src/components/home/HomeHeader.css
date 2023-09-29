@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  min-height: 660px;
 }
 
 .homeHeaderSections {
@@ -197,5 +198,6 @@ h3 {
   .homeHeaderSubSections {
     margin-top: 25px;
     margin-bottom: 25px;
+    max-width: 300px;
   }
 }

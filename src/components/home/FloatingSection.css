@@ -3,7 +3,7 @@
   height: 60px;
   z-index: 20;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
   justify-items: stretch;
   align-items: stretch;
   max-width: 1024px;
@@ -23,7 +23,7 @@
 .homeHeaderFooterSectionTitle {
   position: absolute;
   color: #fff;
-  top: -16px;
+  top: -14px;
   margin: 0;
   opacity: 0.1;
 }
