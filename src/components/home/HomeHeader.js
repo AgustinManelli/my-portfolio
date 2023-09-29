@@ -16,6 +16,7 @@ function HomeHeader() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        position: "relative",
       }}
     >
       <div className="wrapper">
@@ -26,39 +27,41 @@ function HomeHeader() {
       <div className="homeHeaderPattern"></div>
       <div className="homeHeaderContainer">
         <section className="homeHeaderSections">
-          <h1>Agustin Manelli</h1>
-          <p>frontend developer.</p>
+          <div style={{ textAlign: "center" }}>
+            <h1>Agustin Manelli</h1>
+            <p>frontend developer.</p>
+          </div>
           <div className="homeHeader_buttonsContainer">
+            <ButtonDownload
+              icon={<AiOutlineFile style={{ width: "20px", height: "20px" }} />}
+              title="Download CV"
+              file={myphoto}
+              filename="AgustinManelli_CV_2023"
+            />
             <Button
               icon={<AiFillGithub />}
-              name="GitHub"
+              name=""
               link="https://github.com/AgustinManelli"
             />
             <Button
               icon={<AiFillLinkedin />}
-              name="linkedin"
+              name=""
               link="https://www.linkedin.com/in/agustinmanelli/"
             />
           </div>
-          <ButtonDownload
-            icon={<AiOutlineFile style={{ width: "20px", height: "20px" }} />}
-            title="Download CV"
-            file={myphoto}
-            filename="AgustinManelli_CV_2023"
-          />
         </section>
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
-            <ImageClipPath src={myphoto} alr="image" w="250px" h="250px" />
+            <ImageClipPath src={myphoto} alr="image" w="200px" h="200px" />
             {/* MAQUETADO DE EDUCACIÓN */}
+            <p>
+              Fugiat irure sint tempor ullamco ullamco Lorem fugiat laborum
+              voluptate ullamco est.
+            </p>
             <EducationTimeline />
           </div>
         </section>
       </div>
-      <footer className="homeHeaderfooterSection">
-        <section></section>
-        <section></section>
-      </footer>
     </div>
   );
 }

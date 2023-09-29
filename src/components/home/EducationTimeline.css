@@ -2,6 +2,7 @@
   position: relative;
   width: fit-content;
   height: fit-content;
+  margin-left: 30px;
 }
 .EducationTimelineContainer::before {
   content: "";
@@ -26,15 +27,19 @@
 }
 .EducationTimelineElement_time {
   position: absolute;
-  left: -110px;
-  font-size: 12px;
+  left: -100px;
+  font-size: 10px;
   font-weight: 500;
-  color: rgb(98, 98, 98);
+  color: rgb(98, 98, 98, 0.4);
+}
+.EducationTimelineElement_title {
+  font-size: 14px;
 }
 .EducationTimelineElement_circle {
   position: absolute;
   left: -24px;
-  background-color: aqua;
+  background-color: rgba(var(--color-1), 1);
+  box-shadow: 0px 0px 15px 1px rgba(var(--color-1), 0.8);
   width: 10px;
   height: 10px;
   border-radius: 50px;

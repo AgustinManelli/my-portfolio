@@ -7,7 +7,7 @@ function EducationTimeline() {
         <div className="EducationTimelineElement">
           <div className="EducationTimelineElement_circle"></div>
           <p className="EducationTimelineElement_time">2022-actually</p>
-          <p className="EducationTimelineElement_title">IT Engineer</p>
+          <p className="EducationTimelineElement_title">Computer Engineering</p>
         </div>
 
         <div className="EducationTimelineElement">

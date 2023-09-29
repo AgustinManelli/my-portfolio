@@ -4,7 +4,7 @@
 }
 .am_button {
   text-decoration: none;
-  padding: 7px;
+  padding: 7px 10px 7px 10px;
   border-radius: 10px;
   display: flex;
   gap: 5px;
@@ -16,5 +16,5 @@
 }
 
 .am_button:hover {
-  color: var(--color-1);
+  color: rgba(var(--color-1), 1);
 }
