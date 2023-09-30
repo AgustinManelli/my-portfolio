@@ -28,7 +28,15 @@ function HomeHeader() {
       <div className="homeHeaderContainer">
         <section className="homeHeaderSections">
           <div style={{ textAlign: "center" }}>
-            <h1>Agustín Manelli</h1>
+            <h1
+              style={{
+                background: "-webkit-linear-gradient(45deg, #fff, #e1a0ff)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Agustín Manelli
+            </h1>
             <p style={{ marginTop: "10px" }}>frontend developer.</p>
           </div>
           <div className="homeHeader_buttonsContainer">
@@ -54,8 +62,7 @@ function HomeHeader() {
           <div className="homeHeaderSubSections">
             <ImageClipPath src={myphoto} alt="image" w="200px" h="200px" />
             <p style={{ marginTop: "20px" }}>
-              Fugiat irure sint tempor ullamco ullamco Lorem fugiat laborum
-              voluptate ullamco est.
+              Aliquip ea eiusmod nulla sint sint elit tempor.
             </p>
             <p style={{ marginTop: "20px" }}>Education</p>
             <EducationTimeline />
