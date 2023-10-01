@@ -1,60 +1,59 @@
 import "./ProjectsItems.css";
 import Button from "../Button";
-import {
-  AiFillGithub,
-  AiOutlineFullscreen,
-  AiOutlineFullscreenExit,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { ImArrowUpRight2 } from "react-icons/im";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ProjectsItems(props) {
-  const [openPreview, setOpenPreview] = useState(true);
   const tags = props.tags;
-
-  const togglePreview = () => {
-    setOpenPreview(!openPreview);
+  const [showCircle, setShowCircle] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (e) => {
+    const container = document.getElementById(`id-${props.title}`);
+    const rect = container.getBoundingClientRect();
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+  const handleMouseEnter = () => {
+    setShowCircle(true);
+  };
+  const handleMouseLeave = () => {
+    setShowCircle(false);
   };
 
   return (
     <div className="ProjectItemsContainer">
       <p className="ProjectItemsDate">{props.year}</p>
-      <section className="ProjectItemsContentContainer">
-        <button
-          className="ProjectItemsContent_button_fs"
-          onClick={togglePreview}
-        >
-          {openPreview ? <AiOutlineFullscreenExit /> : <AiOutlineFullscreen />}
-        </button>
+      <section
+        className="ProjectItemsContentContainer"
+        onMouseMove={handleMouseMove}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <div
-          className="ProjectItemsBlurred"
-          style={{ backgroundColor: `${props.color}` }}
-        ></div>
-        <img
-          src={props.preview}
+          className="circle"
           style={
-            openPreview
+            showCircle
               ? {
-                  position: "absolute",
-                  width: "90%",
-                  opacity: "1",
-                  transition: "opacity .3s ease-in-out",
-                  borderRadius: "10px",
+                  left: position.x,
+                  top: position.y,
+                  backgroundColor: `${props.color}`,
                 }
               : {
-                  position: "absolute",
-                  width: "90%",
+                  left: position.x,
+                  top: position.y,
+                  backgroundColor: `${props.color}`,
                   opacity: "0",
-                  transition: "opacity .3s ease-in-out",
-                  borderRadius: "10px",
                 }
           }
-          alt="preview project"
-        />
-        <div
-          className="ProjectItemsContent"
-          style={openPreview ? { opacity: "0" } : { opacity: "1" }}
-        >
+        ></div>
+        <div className="ProjectItemsContent" id={`id-${props.title}`}>
+          <div
+            className="ProjectItemsBlurred"
+            style={{ backgroundColor: `${props.color}` }}
+          ></div>
           <p className="ProjectItemsContent_date">{props.date}</p>
           <img
             src={props.logo}
