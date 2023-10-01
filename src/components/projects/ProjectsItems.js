@@ -2,9 +2,12 @@ import "./ProjectsItems.css";
 import Button from "../Button";
 import { AiFillGithub } from "react-icons/ai";
 import { ImArrowUpRight2 } from "react-icons/im";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ProjectsItems(props) {
+  AOS.init();
   const tags = props.tags;
   const [showCircle, setShowCircle] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -31,6 +34,8 @@ function ProjectsItems(props) {
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        data-aos="zoom-in-right"
+        data-aos-once="true"
       >
         <div
           className="circle"
@@ -65,7 +70,7 @@ function ProjectsItems(props) {
           <footer>
             <section className="ProjectItemsContent_tags">
               {tags.map((tag) => (
-                <p>{tag}</p>
+                <p key={`${tag}-${props.title}`}>{tag}</p>
               ))}
             </section>
             <section className="ProjectItemsContent_buttons">

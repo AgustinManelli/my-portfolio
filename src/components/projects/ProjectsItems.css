@@ -88,6 +88,7 @@
 .ProjectItemsContent_tags {
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .ProjectItemsContent_tags p {
@@ -152,5 +153,26 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   filter: blur(120px);
-  transition: opacity 0.2s;
+  transition: opacity 0.5s;
+}
+
+@media screen and (max-width: 730px) {
+  .ProjectItemsContent {
+    width: 400px;
+  }
+  .ProjectItemsContainer::before {
+    display: none;
+  }
+  .ProjectItemsContentContainer {
+    margin-left: 0;
+  }
+  .ProjectItemsDate {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ProjectItemsContent {
+    width: 280px;
+  }
 }
