@@ -19,18 +19,15 @@
 .ProjectItemsContent {
   width: 400px;
   height: fit-content;
-  background-color: rgb(0, 0, 0, 10%);
-  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
   position: relative;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: left;
-  backdrop-filter: blur(80px) saturate(200%);
   z-index: 20;
   flex-direction: column;
-  padding: 20px;
   overflow: hidden;
+  padding: 30px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .ProjectItemsContainer::before {
@@ -54,10 +51,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 50px;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(80px) saturate(200%);
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 10%);
+  overflow: hidden;
 }
 
 .ProjectItemsBlurred {
-  background-color: rgb(var(--color-1));
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -97,7 +98,7 @@
 }
 .ProjectItemsContent_buttons {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 .ProjectItemsContent_goto {
   display: flex;
@@ -114,4 +115,29 @@
 }
 .ProjectItemsContent_goto:hover {
   transform: scale(110%);
+}
+.ProjectItemsContent_button_fs {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  cursor: pointer;
+  opacity: 0.3;
+  z-index: 100;
+}
+.ProjectItemsContent_button_fs svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s;
+}
+
+.ProjectItemsContent_button_fs:hover svg {
+  transform: scale(130%);
 }
