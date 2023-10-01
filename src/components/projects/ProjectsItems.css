@@ -12,6 +12,8 @@
 .ProjectItemsDate {
   position: absolute;
   left: -70px;
+  color: #292929;
+  opacity: 0.8;
 }
 
 .ProjectItemsContent {
@@ -90,13 +92,26 @@
   padding: 5px 10px 5px 10px;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
   opacity: 0.5;
+  font-size: 13px;
+  font-weight: 200;
 }
 .ProjectItemsContent_buttons {
   display: flex;
   gap: 20px;
 }
-.ProjectItemsContent_buttons a {
-  padding: 10px;
+.ProjectItemsContent_goto {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--color-1));
   border-radius: 10px;
+  padding: 5px 10px 5px 10px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+.ProjectItemsContent_goto:hover {
+  transform: scale(110%);
 }

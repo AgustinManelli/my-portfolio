@@ -2,7 +2,7 @@
   margin-top: 30px;
   width: 100vw;
   height: fit-content;
-  color: aliceblue;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,7 @@
   width: 3px;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #292929;
   left: 0;
+  opacity: 0.5;
 }
