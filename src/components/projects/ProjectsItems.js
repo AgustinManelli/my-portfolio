@@ -29,6 +29,13 @@ function ProjectsItems(props) {
   return (
     <div className="ProjectItemsContainer">
       <p className="ProjectItemsDate">{props.year}</p>
+      <div
+        className="ProjectItemsDot"
+        style={{
+          backgroundColor: `${props.color}`,
+          boxShadow: `0px 0px 20px 3px ${props.color}`,
+        }}
+      ></div>
       <section
         className="ProjectItemsContentContainer"
         onMouseMove={handleMouseMove}
@@ -54,11 +61,11 @@ function ProjectsItems(props) {
                 }
           }
         ></div>
+        <div
+          className="ProjectItemsBlurred"
+          style={{ backgroundColor: `${props.color}` }}
+        ></div>
         <div className="ProjectItemsContent" id={`id-${props.title}`}>
-          <div
-            className="ProjectItemsBlurred"
-            style={{ backgroundColor: `${props.color}` }}
-          ></div>
           <p className="ProjectItemsContent_date">{props.date}</p>
           <img
             src={props.logo}
