@@ -1,0 +1,27 @@
+.ProjectsContainer {
+  margin-top: 30px;
+  width: 100vw;
+  height: fit-content;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Projects::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+}
