@@ -49,6 +49,8 @@
 .EducationTimelineElement_title {
   width: 0%;
   font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   overflow: hidden;
   white-space: nowrap;
   animation: TimelineAnimation2 1s forwards;

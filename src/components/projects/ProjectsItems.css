@@ -39,6 +39,7 @@
   border-radius: 100%;
   position: absolute;
   left: -5px;
+  transition: filter 0.5s;
 }
 
 .ProjectItemsContentContainer {

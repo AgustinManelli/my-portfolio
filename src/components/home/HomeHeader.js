@@ -30,9 +30,12 @@ function HomeHeader() {
           <div style={{ textAlign: "center" }}>
             <h1
               style={{
-                background: "-webkit-linear-gradient(45deg, #fff, #e1a0ff)",
+                background:
+                  "-webkit-linear-gradient(70deg, #5a0bd9, rgb(var(--color-1)))",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                fontSize: "50px",
+                paddingBottom: "10px",
               }}
             >
               Agustín Manelli

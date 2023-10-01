@@ -31,10 +31,18 @@ function ProjectsItems(props) {
       <p className="ProjectItemsDate">{props.year}</p>
       <div
         className="ProjectItemsDot"
-        style={{
-          backgroundColor: `${props.color}`,
-          boxShadow: `0px 0px 20px 3px ${props.color}`,
-        }}
+        style={
+          showCircle
+            ? {
+                backgroundColor: `${props.color}`,
+                boxShadow: `0px 0px 20px 3px ${props.color}`,
+              }
+            : {
+                backgroundColor: `${props.color}`,
+                boxShadow: `0px 0px 20px 1px ${props.color}`,
+                filter: "grayscale(80%)",
+              }
+        }
       ></div>
       <section
         className="ProjectItemsContentContainer"
