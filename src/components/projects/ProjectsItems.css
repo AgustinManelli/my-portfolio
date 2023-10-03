@@ -38,7 +38,7 @@
   height: 12px;
   border-radius: 100%;
   position: absolute;
-  left: -5px;
+  left: -4px;
   transition: filter 0.5s;
 }
 
@@ -157,11 +157,13 @@
   .ProjectItemsContent {
     width: 400px;
   }
-  .ProjectItemsContainer::before {
+  .ProjectItemsDot {
     display: none;
   }
   .ProjectItemsContentContainer {
     margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .ProjectItemsDate {
     display: none;
