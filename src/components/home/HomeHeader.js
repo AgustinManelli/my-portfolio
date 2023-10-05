@@ -28,18 +28,7 @@ function HomeHeader() {
       <div className="homeHeaderContainer">
         <section className="homeHeaderSections">
           <div style={{ textAlign: "center" }}>
-            <h1
-              style={{
-                background:
-                  "-webkit-linear-gradient(70deg, #5a0bd9, rgb(var(--color-1)))",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                fontSize: "50px",
-                paddingBottom: "10px",
-              }}
-            >
-              Agustín Manelli
-            </h1>
+            <h1 className="homeHeaderName">Agustín Manelli</h1>
             <p style={{ marginTop: "10px" }}>frontend developer.</p>
           </div>
           <div className="homeHeader_buttonsContainer">

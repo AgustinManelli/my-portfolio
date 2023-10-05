@@ -57,6 +57,15 @@ h3 {
   margin-right: 20px;
 }
 
+.homeHeaderName {
+  background: -webkit-linear-gradient(70deg, #5a0bd9, rgb(var(--color-1)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
 .homeHeaderPattern {
   position: absolute;
   width: 100vw;
@@ -203,5 +212,8 @@ h3 {
   }
   .homeHeaderPattern {
     background-position: -200px;
+  }
+  .homeHeaderName {
+    font-size: 30px;
   }
 }
