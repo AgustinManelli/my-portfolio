@@ -23,7 +23,7 @@ function Projects() {
           visit={true}
           link="https://bepixel.vercel.app/"
           repo="https://github.com/AgustinManelli/bepixel"
-          color="#bc03ff"
+          color="#e10098"
         />
         <ProjectsItems
           logo={impuestarlogo}
@@ -36,6 +36,18 @@ function Projects() {
           link={undefined}
           repo="https://github.com/AgustinManelli/Impuestarkeylogger"
           color="#0055ff"
+        />
+        <ProjectsItems
+          logo={impuestarlogo}
+          year="2023"
+          date="sep 20, 2023"
+          title="My protfolio"
+          desc="Mi propio portafolio creado con algunas tecnologías de mi TechStack"
+          tags={["React", "FramerMotion", "i18next"]}
+          visit={false}
+          link={undefined}
+          repo="https://github.com/AgustinManelli/Impuestarkeylogger"
+          color="#bc03ff"
         />
       </div>
     </section>
