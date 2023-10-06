@@ -1,11 +1,7 @@
 import "./CertificationsItems.css";
 function CertificationsItems(props) {
   return (
-    <a
-      href="https://uve.frc.utn.edu.ar/mod/customcert/verify_certificate.php?contextid=24526&code=cMoGvqV4ks"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href={props.linktocertificate} target="_blank" rel="noreferrer">
       <div className="CertificationsItemsContainer">
         <div
           className="CertificationsItemsCircle"
