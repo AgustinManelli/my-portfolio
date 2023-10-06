@@ -5,9 +5,6 @@
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .CertificationsItemsCircle {
@@ -20,6 +17,11 @@
   bottom: -100px;
   right: -100px;
   z-index: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.CertificationsItemsContainer:hover .CertificationsItemsCircle {
+  transform: scale(200%);
 }
 
 .CertificationsItems {
@@ -29,4 +31,53 @@
   background-color: rgb(0, 0, 0, 70%);
   border-radius: 10px;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CertificationsItems img {
+  max-height: 45px;
+  max-width: 100px;
+}
+
+.CertificationsItemsIMGTXT {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.CertificationsItemsTime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  color: rgb(255, 255, 255, 0.1);
+}
+
+.CertificationsItemsTitle {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.CertificationsItemsId {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  color: rgb(255, 255, 255, 0.1);
+}
+
+.certificationTech {
+  fill: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
