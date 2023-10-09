@@ -23,16 +23,23 @@
   align-items: center;
   flex-direction: column;
   height: fit-content;
+  gap: 50px;
 }
 
 .Projects::before {
   content: "";
   width: 4px;
   position: absolute;
-  background-color: #292929;
-  left: 4px;
-  opacity: 0.5;
+  background-color: #fff;
+  opacity: 0.08;
+  left: 14px;
   animation: TimelineAnimation1 1s forwards;
+}
+
+.ProjectsSections {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 .ProjectDotContainer {
@@ -41,6 +48,10 @@
   left: 0;
   display: flex;
   align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: fit-content;
+  z-index: 1;
 }
 
 .ProjectDot {
@@ -48,13 +59,15 @@
   height: 12px;
   border-radius: 100%;
   transition: filter 0.5s;
+  background-color: #292929;
+  border: solid 10px #000;
 }
 
 .ProjectDate {
   position: absolute;
   color: #292929;
   opacity: 0.8;
-  left: -70px;
+  left: -50px;
   font-weight: 700;
 }
 
