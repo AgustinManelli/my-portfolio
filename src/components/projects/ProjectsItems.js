@@ -28,8 +28,8 @@ function ProjectsItems(props) {
 
   return (
     <div className="ProjectItemsContainer">
-      <p className="ProjectItemsDate">{props.year}</p>
-      <div
+      {/* <p className="ProjectItemsDate">{props.year}</p> */}
+      {/* <div
         className="ProjectItemsDot"
         style={
           showCircle
@@ -43,7 +43,7 @@ function ProjectsItems(props) {
                 filter: "grayscale(80%)",
               }
         }
-      ></div>
+      ></div> */}
       <section
         className="ProjectItemsContentContainer"
         onMouseMove={handleMouseMove}

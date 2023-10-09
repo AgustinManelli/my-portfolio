@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
   position: relative;
 }
 
@@ -23,17 +22,40 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: fit-content;
 }
 
 .Projects::before {
   content: "";
-  width: 3px;
-  height: 0%;
+  width: 4px;
   position: absolute;
   background-color: #292929;
-  left: 0;
+  left: 4px;
   opacity: 0.5;
   animation: TimelineAnimation1 1s forwards;
+}
+
+.ProjectDotContainer {
+  position: sticky;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ProjectDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  transition: filter 0.5s;
+}
+
+.ProjectDate {
+  position: absolute;
+  color: #292929;
+  opacity: 0.8;
+  left: -70px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 730px) {

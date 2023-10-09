@@ -22,7 +22,7 @@
 }
 
 .CertificationsItemsContainer:hover .CertificationsItemsCircle {
-  transform: scale(150%);
+  transform: scale(200%);
 }
 
 .CertificationsItems {
