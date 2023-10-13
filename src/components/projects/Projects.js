@@ -12,7 +12,7 @@ function Projects() {
       <header className="ProjectsHeader">
         <h1>My projects</h1>
       </header>
-      <img src={backdeco} style={{ position: "absolute", zIndex: "2" }} />
+      {/* <img src={backdeco} style={{ position: "absolute", zIndex: "2" }} /> */}
       <div className="Projects">
         <div className="ProjectsSections">
           <div className="ProjectDotContainer">

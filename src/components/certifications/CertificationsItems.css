@@ -5,7 +5,7 @@
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(50px) saturate(200%);
+  backdrop-filter: blur(30px) saturate(200%);
 }
 
 .CertificationsItemsCircle {
@@ -13,23 +13,24 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  filter: blur(30px);
-  transition: opacity 0.5s;
+  filter: blur(60px);
   bottom: -100px;
   right: -100px;
   z-index: 1;
-  transition: transform 0.2s ease-in-out;
+  opacity: 0.3;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .CertificationsItemsContainer:hover .CertificationsItemsCircle {
   transform: scale(200%);
+  opacity: 0.1;
 }
 
 .CertificationsItems {
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: rgb(0, 0, 0, 70%);
+  background-color: rgb(0, 0, 0, 50%);
   border-radius: 10px;
   z-index: 10;
   display: flex;

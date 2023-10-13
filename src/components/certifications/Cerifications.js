@@ -7,8 +7,13 @@ import google from "../../assets/activategoogle.png";
 function Certifications() {
   return (
     <section className="CertificationsContainer">
+      <div className="wrapper">
+        <div className="gradient gradient-1"></div>
+        <div className="gradient gradient-2"></div>
+        <div className="gradient gradient-3"></div>
+      </div>
       <div className="CertificationsBackground"></div>
-      <h1 style={{ color: "#fff" }}>prueba</h1>
+      <h1 style={{ color: "#fff" }}>Certifications</h1>
       <div
         style={{
           display: "flex",
@@ -18,7 +23,7 @@ function Certifications() {
         }}
       >
         <CertificationsItems
-          color="#bc03ff"
+          color="#0078FF"
           thumbnail={utn}
           techstack={<BiLogoReact className="certificationTech" />}
           idbool={false}
@@ -27,7 +32,7 @@ function Certifications() {
           linktocertificate="https://uve.frc.utn.edu.ar/mod/customcert/verify_certificate.php?contextid=24526&code=cMoGvqV4ks"
         />
         <CertificationsItems
-          color="#bc03ff"
+          color="#FFCD00"
           thumbnail={google}
           techstack={<BiLogoReact className="certificationTech" />}
           idbool={true}
@@ -37,7 +42,7 @@ function Certifications() {
           linktocertificate="https://learndigital.withgoogle.com/activate/validate-certificate-code"
         />
         <CertificationsItems
-          color="#bc03ff"
+          color="#FFCD00"
           thumbnail={google}
           techstack={<BiLogoReact className="certificationTech" />}
           idbool={true}
