@@ -1,0 +1,35 @@
+.footerContainer {
+  position: relative;
+  width: 100vw;
+  height: 30px;
+  background-color: black;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLinks a {
+  color: #292929;
+}
+
+.footerContainer p {
+  color: #292929;
+  font-size: 13px;
+  font-weight: 700;
+}

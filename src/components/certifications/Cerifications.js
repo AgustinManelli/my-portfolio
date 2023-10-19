@@ -13,7 +13,9 @@ function Certifications() {
         <div className="gradient gradient-3"></div>
       </div>
       <div className="CertificationsBackground"></div>
-      <h1 style={{ color: "#fff" }}>Certifications</h1>
+      <h1 style={{ color: "#fff", marginBottom: "50px", zIndex: "10" }}>
+        Certifications
+      </h1>
       <div
         style={{
           display: "flex",

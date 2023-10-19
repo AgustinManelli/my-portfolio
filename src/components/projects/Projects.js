@@ -1,7 +1,6 @@
 import "./Projects.css";
 import ProjectsItems from "./ProjectsItems";
 import logo from "../../assets/ISOTIPO.svg";
-import project1 from "../../assets/project1.jpg";
 import impuestarlogo from "../../assets/impuestarlogo.jpg";
 import backdeco from "../../assets/blue-purple-1.svg";
 import { useState } from "react";
@@ -22,7 +21,6 @@ function Projects() {
           <div>
             <ProjectsItems
               logo={logo}
-              preview={project1}
               year="2023"
               date="mar 3, 2023"
               title="bepixel"
