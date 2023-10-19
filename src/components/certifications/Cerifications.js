@@ -27,7 +27,7 @@ function Certifications() {
         <CertificationsItems
           color="#0078FF"
           thumbnail={utn}
-          techstack={<BiLogoReact className="certificationTech" />}
+          techstack={undefined}
           idbool={false}
           time="nov 2022"
           title="Testing de software"
@@ -36,7 +36,7 @@ function Certifications() {
         <CertificationsItems
           color="#FFCD00"
           thumbnail={google}
-          techstack={<BiLogoReact className="certificationTech" />}
+          techstack={undefined}
           idbool={true}
           idcertification="X9C LYS 34A"
           time="apr 2022"
@@ -46,7 +46,7 @@ function Certifications() {
         <CertificationsItems
           color="#FFCD00"
           thumbnail={google}
-          techstack={<BiLogoReact className="certificationTech" />}
+          techstack={undefined}
           idbool={true}
           idcertification="5UE Z9C X8H "
           time="apr 2022"
