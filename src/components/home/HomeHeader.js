@@ -53,8 +53,9 @@ function HomeHeader() {
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
             <ImageClipPath src={myphoto} alt="image" w="200px" h="200px" />
-            <p style={{ marginTop: "20px" }}>
-              Aliquip ea eiusmod nulla sint sint elit tempor.
+            <p style={{ marginTop: "20px", fontSize: "15px" }}>
+              I have a strong foundation in React, JS, HTML, and CSS, and
+              proficient in graphic design tools like Photoshop and Illustrator.
             </p>
             <p style={{ marginTop: "20px" }}>Education</p>
             <EducationTimeline />
