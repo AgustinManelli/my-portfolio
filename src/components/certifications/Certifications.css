@@ -25,5 +25,10 @@
   overflow: visible;
 }
 
-@media screen and (max-width: 815px) {
+.CertificationsCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }

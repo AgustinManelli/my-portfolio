@@ -83,3 +83,23 @@
   height: 40px;
   margin: 5px;
 }
+
+@media screen and (max-width: 815px) {
+  .CertificationsItems {
+    width: 150px;
+    height: 150px;
+  }
+  .CertificationsItemsTime {
+    font-size: 13px;
+  }
+  .CertificationsItems img {
+    max-height: 40px;
+    max-width: 80px;
+  }
+  .CertificationsItemsTitle {
+    font-size: 13px;
+  }
+  .CertificationsItemsId {
+    font-size: 13px;
+  }
+}

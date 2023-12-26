@@ -16,14 +16,7 @@ function Certifications() {
       <h1 style={{ color: "#fff", marginBottom: "50px", zIndex: "10" }}>
         Certifications
       </h1>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "50px",
-        }}
-      >
+      <div className="CertificationsCardContainer">
         <CertificationsItems
           color="#0078FF"
           thumbnail={utn}
