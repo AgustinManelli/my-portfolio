@@ -31,7 +31,7 @@
   width: 4px;
   position: absolute;
   background-color: #fff;
-  opacity: 0.08;
+  opacity: 0.09;
   left: 14px;
   animation: TimelineAnimation1 1s forwards;
 }
@@ -74,5 +74,17 @@
 @media screen and (max-width: 730px) {
   .Projects::before {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ProjectDate {
+    position: absolute;
+    color: #292929;
+    opacity: 0.8;
+    left: -6px;
+    top: 50px;
+    font-weight: 700;
+    transform: rotate(-90deg);
   }
 }
