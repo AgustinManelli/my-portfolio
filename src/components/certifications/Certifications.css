@@ -3,10 +3,9 @@
   height: fit-content;
   min-height: 500px;
   margin-top: 100px;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   margin-top: 50px;
-  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,4 +23,7 @@
   opacity: 0.5;
   max-width: 1450px;
   overflow: visible;
+}
+
+@media screen and (max-width: 815px) {
 }
