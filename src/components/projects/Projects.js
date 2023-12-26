@@ -2,6 +2,7 @@ import "./Projects.css";
 import ProjectsItems from "./ProjectsItems";
 import logo from "../../assets/ISOTIPO.svg";
 import impuestarlogo from "../../assets/impuestarlogo.jpg";
+import { FaHeart } from "react-icons/fa";
 import backdeco from "../../assets/blue-purple-1.svg";
 import { useState } from "react";
 function Projects() {
@@ -24,7 +25,7 @@ function Projects() {
               year="2023"
               date="mar 3, 2023"
               title="bepixel"
-              desc="Página web para agencia de diseño gráfico con buscado de herramientas"
+              desc="Website for graphic design agency with tools search engine"
               tags={["React", "Supabase", "FramerMotion", "i18next"]}
               visit={true}
               link="https://bepixel.vercel.app/"
@@ -32,15 +33,24 @@ function Projects() {
               color="#e10098"
             />
             <ProjectsItems
-              logo={impuestarlogo}
+              logo={undefined}
+              icon={
+                <FaHeart
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    marginBottom: "10px",
+                  }}
+                />
+              }
               year="2023"
               date="sep 20, 2023"
               title="My protfolio"
-              desc="Mi propio portafolio creado con algunas tecnologías de mi TechStack"
+              desc="My own portfolio created with some technologies from my TechStack"
               tags={["React", "FramerMotion", "i18next"]}
               visit={false}
               link={undefined}
-              repo="https://github.com/AgustinManelli/Impuestarkeylogger"
+              repo="https://github.com/AgustinManelli/my-portfolio"
               color="#bc03ff"
             />
           </div>
@@ -56,7 +66,7 @@ function Projects() {
               year="2022"
               date="may 1, 2022"
               title="Impuestar keylogger"
-              desc="Keylogger encapsulado en aplicación de cálculo de impuestos."
+              desc="Keylogger encapsulated in tax calculation application for Argentina"
               tags={["Python", "Tkinter"]}
               visit={false}
               link={undefined}

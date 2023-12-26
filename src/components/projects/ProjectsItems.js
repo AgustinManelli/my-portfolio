@@ -75,11 +75,16 @@ function ProjectsItems(props) {
         ></div>
         <div className="ProjectItemsContent" id={`id-${props.title}`}>
           <p className="ProjectItemsContent_date">{props.date}</p>
-          <img
-            src={props.logo}
-            className="ProjectItemsContent_logo"
-            alt="project logo"
-          />
+          {props.logo == undefined ? (
+            props.icon
+          ) : (
+            <img
+              src={props.logo}
+              className="ProjectItemsContent_logo"
+              alt="project logo"
+            />
+          )}
+
           <h2 className="ProjectItemsContent_title">{props.title}</h2>
           <p className="ProjectItemsContent_desc">{props.desc}</p>
           <footer>
