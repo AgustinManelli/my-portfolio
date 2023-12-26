@@ -12,7 +12,10 @@ function Certifications() {
         <div className="gradient gradient-2"></div>
         <div className="gradient gradient-3"></div>
       </div>
-      <div className="CertificationsBackground"></div>
+      <div className="CertificationsBackgroundContainer">
+        <div className="CertificationsBackground"></div>
+      </div>
+
       <h1 style={{ color: "#fff", marginBottom: "50px", zIndex: "10" }}>
         Certifications
       </h1>

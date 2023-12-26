@@ -149,7 +149,7 @@
   height: 300px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  filter: blur(120px);
+  filter: blur(120px) saturate(150%);
   transition: opacity 0.5s;
 }
 
