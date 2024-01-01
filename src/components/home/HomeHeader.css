@@ -34,7 +34,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .homeHeaderSubSections {
