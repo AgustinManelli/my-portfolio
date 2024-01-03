@@ -18,11 +18,13 @@ function Footer() {
             name=""
             link="https://github.com/AgustinManelli"
           />
+          {/*
           <Button
             icon={<AiOutlineFile />}
             name=""
             link="https://github.com/AgustinManelli"
           />
+  */}
         </div>
       </div>
     </footer>

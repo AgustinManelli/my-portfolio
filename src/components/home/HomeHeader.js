@@ -32,12 +32,12 @@ function HomeHeader() {
             <p>frontend developer</p>
           </div>
           <div className="homeHeader_buttonsContainer">
-            <ButtonDownload
+            {/*<ButtonDownload
               icon={<AiOutlineFile style={{ width: "20px", height: "20px" }} />}
               title="Download CV"
               file={myphoto}
               filename="AgustinManelli_CV_2023"
-            />
+    />*/}
             <Button
               icon={<AiFillGithub />}
               name=""
