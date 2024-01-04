@@ -1,6 +1,7 @@
 import "./Projects.css";
 import ProjectsItems from "./ProjectsItems";
 import logo from "../../assets/ISOTIPO.svg";
+import laespumitalogo from "../../assets/laespumita.svg";
 import impuestarlogo from "../../assets/impuestarlogo.jpg";
 import { FaHeart } from "react-icons/fa";
 import backdeco from "../../assets/blue-purple-1.svg";
@@ -14,6 +15,26 @@ function Projects() {
       </header>
       {/* <img src={backdeco} style={{ position: "absolute", zIndex: "2" }} /> */}
       <div className="Projects">
+        <div className="ProjectsSections">
+          <div className="ProjectDotContainer">
+            <p className="ProjectDate">2024</p>
+            <div className="ProjectDot"></div>
+          </div>
+          <div>
+            <ProjectsItems
+              logo={laespumitalogo}
+              year="2023"
+              date="jan 4, 2024"
+              title="la espumita webapp"
+              desc="Calculator web application for business"
+              tags={["React", "FramerMotion"]}
+              visit={true}
+              link="https://laespumita.vercel.app/"
+              repo="https://github.com/AgustinManelli/laespumita"
+              color="#008fd2"
+            />
+          </div>
+        </div>
         <div className="ProjectsSections">
           <div className="ProjectDotContainer">
             <p className="ProjectDate">2023</p>
