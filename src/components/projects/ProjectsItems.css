@@ -74,7 +74,15 @@
 }
 .ProjectItemsContent_logo {
   width: 50px;
+  height: auto;
   margin-bottom: 10px;
+}
+.ProjectItemsContentLogoBG {
+  position: absolute;
+  right: -50%;
+  width: 600px;
+  height: auto;
+  opacity: 0.05;
 }
 .ProjectItemsContent_title {
   margin-bottom: 10px;

@@ -74,6 +74,15 @@ function ProjectsItems(props) {
           style={{ backgroundColor: `${props.color}` }}
         ></div>
         <div className="ProjectItemsContent" id={`id-${props.title}`}>
+          {props.logo == undefined ? (
+            props.iconbg
+          ) : (
+            <img
+              src={props.logobg}
+              className="ProjectItemsContentLogoBG"
+              alt="project logo"
+            />
+          )}
           <p className="ProjectItemsContent_date">{props.date}</p>
           {props.logo == undefined ? (
             props.icon

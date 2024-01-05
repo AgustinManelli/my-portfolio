@@ -6,6 +6,10 @@ import impuestarlogo from "../../assets/impuestarlogo.jpg";
 import { FaHeart } from "react-icons/fa";
 import backdeco from "../../assets/blue-purple-1.svg";
 import { useState } from "react";
+import bepixel_logobg from "../../assets/BEPIXEL_LOGOBG.svg";
+import bepixel2_logobg from "../../assets/BEPIXEL2_LOGOBG.svg";
+import laespumita_logobg from "../../assets/LAESPUMITA_LOGOBG.svg";
+import impuestar_logobg from "../../assets/IMPUESTAR_LOGOBG.svg";
 function Projects() {
   const [showCircle, setShowCircle] = useState(false);
   return (
@@ -32,6 +36,7 @@ function Projects() {
               link="https://laespumita.vercel.app/"
               repo="https://github.com/AgustinManelli/laespumita"
               color="#008fd2"
+              logobg={laespumita_logobg}
             />
           </div>
         </div>
@@ -52,6 +57,7 @@ function Projects() {
               link="https://bepixel.vercel.app/"
               repo="https://github.com/AgustinManelli/bepixel"
               color="#e10098"
+              logobg={bepixel2_logobg}
             />
             <ProjectsItems
               logo={undefined}
@@ -73,6 +79,18 @@ function Projects() {
               link={undefined}
               repo="https://github.com/AgustinManelli/my-portfolio"
               color="#bc03ff"
+              logobg={bepixel_logobg}
+              iconbg={
+                <FaHeart
+                  style={{
+                    position: "absolute",
+                    right: "-30%",
+                    width: "350px",
+                    height: "auto",
+                    opacity: "0.05",
+                  }}
+                />
+              }
             />
           </div>
         </div>
@@ -83,7 +101,7 @@ function Projects() {
           </div>
           <div>
             <ProjectsItems
-              logo={impuestarlogo}
+              logo={impuestar_logobg}
               year="2022"
               date="may 1, 2022"
               title="Impuestar keylogger"
@@ -93,6 +111,7 @@ function Projects() {
               link={undefined}
               repo="https://github.com/AgustinManelli/Impuestarkeylogger"
               color="#0055ff"
+              logobg={impuestar_logobg}
             />
           </div>
         </div>
