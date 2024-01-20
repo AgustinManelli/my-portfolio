@@ -31,7 +31,7 @@ function Projects() {
               date="jan 4, 2024"
               title="la espumita webapp"
               desc="Calculator web application for business"
-              tags={["React", "FramerMotion"]}
+              tags={["React", "FramerMotion", "Lightweight Charts"]}
               visit={true}
               link="https://laespumita.vercel.app/"
               repo="https://github.com/AgustinManelli/laespumita"
