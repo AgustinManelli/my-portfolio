@@ -30,7 +30,7 @@ function Projects() {
               year="2024"
               date="apr 12, 2024"
               title="Alino"
-              desc="Todo list with database and loggin"
+              desc="Todo list with database and login/register"
               tags={["NextJS", "React", "FramerMotion", "Supabase"]}
               visit={true}
               link="https://alino.vercel.app/"
