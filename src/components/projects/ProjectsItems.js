@@ -74,15 +74,6 @@ function ProjectsItems(props) {
           style={{ backgroundColor: `${props.color}` }}
         ></div>
         <div className="ProjectItemsContent" id={`id-${props.title}`}>
-          {props.logo == undefined ? (
-            props.iconbg
-          ) : (
-            <img
-              src={props.logobg}
-              className="ProjectItemsContentLogoBG"
-              alt="project logo"
-            />
-          )}
           <p className="ProjectItemsContent_date">{props.date}</p>
           {props.logo == undefined ? (
             props.icon
@@ -93,7 +84,6 @@ function ProjectsItems(props) {
               alt="project logo"
             />
           )}
-
           <h2 className="ProjectItemsContent_title">{props.title}</h2>
           <p className="ProjectItemsContent_desc">{props.desc}</p>
           <footer>
@@ -121,6 +111,15 @@ function ProjectsItems(props) {
               <Button icon={<AiFillGithub />} link={props.repo} />
             </section>
           </footer>
+          {props.logo == undefined ? (
+            props.iconbg
+          ) : (
+            <img
+              src={props.logobg}
+              className="ProjectItemsContentLogoBG"
+              alt="project logo"
+            />
+          )}
         </div>
       </section>
     </div>

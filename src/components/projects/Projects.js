@@ -2,14 +2,14 @@ import "./Projects.css";
 import ProjectsItems from "./ProjectsItems";
 import logo from "../../assets/ISOTIPO.svg";
 import laespumitalogo from "../../assets/laespumita.svg";
-import impuestarlogo from "../../assets/impuestarlogo.jpg";
 import { FaHeart } from "react-icons/fa";
-import backdeco from "../../assets/blue-purple-1.svg";
 import { useState } from "react";
 import bepixel_logobg from "../../assets/BEPIXEL_LOGOBG.svg";
 import bepixel2_logobg from "../../assets/BEPIXEL2_LOGOBG.svg";
 import laespumita_logobg from "../../assets/LAESPUMITA_LOGOBG.svg";
 import impuestar_logobg from "../../assets/IMPUESTAR_LOGOBG.svg";
+import alino_logobg from "../../assets/alinoLogo.svg";
+import alino2_logobg from "../../assets/alinoLogo3.webp";
 function Projects() {
   const [showCircle, setShowCircle] = useState(false);
   return (
@@ -26,10 +26,23 @@ function Projects() {
           </div>
           <div>
             <ProjectsItems
+              logo={alino_logobg}
+              year="2024"
+              date="apr 12, 2024"
+              title="Alino"
+              desc="Todo list with database and loggin"
+              tags={["NextJS", "React", "FramerMotion", "Supabase"]}
+              visit={true}
+              link="https://alino.vercel.app/"
+              repo="https://github.com/AgustinManelli/alino"
+              color="#7D189D"
+              logobg={alino2_logobg}
+            />
+            <ProjectsItems
               logo={laespumitalogo}
-              year="2023"
+              year="2024"
               date="jan 4, 2024"
-              title="la espumita webapp"
+              title="La espumita"
               desc="Calculator web application for business"
               tags={["React", "FramerMotion", "Lightweight Charts"]}
               visit={true}
