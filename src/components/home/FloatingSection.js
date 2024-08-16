@@ -1,5 +1,6 @@
 import "./FloatingSection.css";
-import { FaReact, FaJsSquare, FaGit, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaJsSquare } from "react-icons/fa";
+import { SiNextdotjs, SiCplusplus } from "react-icons/si";
 import { RiSupabaseLine } from "react-icons/ri";
 import {
   SiAdobephotoshop,
@@ -24,11 +25,11 @@ function FloatingSection() {
       <footer className="homeHeaderfooterSection">
         <section>
           <p className="homeHeaderFooterSectionTitle">tech stack</p>
-          <FaJsSquare className="homeHeaderFooterIcon" />
+          <SiNextdotjs className="homeHeaderFooterIcon" />
           <FaReact className="homeHeaderFooterIcon" />
           <RiSupabaseLine className="homeHeaderFooterIcon" />
-          <FaNodeJs className="homeHeaderFooterIcon" />
-          <FaGit className="homeHeaderFooterIcon" />
+          <FaJsSquare className="homeHeaderFooterIcon" />
+          <SiCplusplus className="homeHeaderFooterIcon" />
         </section>
         <section style={{ marginLeft: "20px" }}>
           <p className="homeHeaderFooterSectionTitle">design</p>
