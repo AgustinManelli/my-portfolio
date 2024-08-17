@@ -37,6 +37,7 @@ function Projects() {
               repo="https://github.com/AgustinManelli/alino"
               color="#7D189D"
               logobg={alino2_logobg}
+              progress={true}
             />
             <ProjectsItems
               logo={laespumitalogo}

@@ -74,6 +74,12 @@ function ProjectsItems(props) {
           style={{ backgroundColor: `${props.color}` }}
         ></div>
         <div className="ProjectItemsContent" id={`id-${props.title}`}>
+          {props.progress && (
+            <div className="inProgress">
+              <div className="inProgressDot"></div>
+              <p className="inProgressText">in progress</p>
+            </div>
+          )}
           <p className="ProjectItemsContent_date">{props.date}</p>
           {props.logo == undefined ? (
             props.icon
