@@ -16,7 +16,7 @@ function Footer() {
           <Button
             icon={<AiFillLinkedin />}
             name=""
-            link="https://github.com/AgustinManelli"
+            link="https://www.linkedin.com/in/agustinmanelli/"
           />
           {/*
           <Button

@@ -3,7 +3,6 @@
   width: fit-content;
   height: fit-content;
   margin-left: 30px;
-  margin-top: 10px;
 }
 .EducationTimelineContainer::before {
   content: "";

@@ -1,24 +1,14 @@
 import "./HomeHeader.css";
 import Button from "../Button";
-import { AiFillGithub, AiFillLinkedin, AiOutlineFile } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import ImageClipPath from "../ImageClipPath";
 import myphoto from "../../assets/271193082_426444742538952_146421189548635760_n.jpeg";
-import ButtonDownload from "../ButtonDownload";
 import EducationTimeline from "./EducationTimeline";
 import FloatingSection from "./FloatingSection.js";
 
 function HomeHeader() {
   return (
-    <div
-      style={{
-        width: "100vw",
-        height: "fit-content",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        position: "relative",
-      }}
-    >
+    <div className="headerContainer">
       <div className="wrapper">
         <div className="gradient gradient-1"></div>
         <div className="gradient gradient-2"></div>
@@ -32,12 +22,6 @@ function HomeHeader() {
             <p>frontend developer</p>
           </div>
           <div className="homeHeader_buttonsContainer">
-            {/*<ButtonDownload
-              icon={<AiOutlineFile style={{ width: "20px", height: "20px" }} />}
-              title="Download CV"
-              file={myphoto}
-              filename="AgustinManelli_CV_2023"
-    />*/}
             <Button
               icon={<AiFillGithub />}
               name=""
@@ -52,12 +36,12 @@ function HomeHeader() {
         </section>
         <section className="homeHeaderSections">
           <div className="homeHeaderSubSections">
-            <ImageClipPath src={myphoto} alt="image" w="200px" h="200px" />
-            <p style={{ marginTop: "20px", fontSize: "15px" }}>
+            <ImageClipPath src={myphoto} alt="image" w="150px" h="150px" />
+            <p className="subSectionDescription">
               I have a strong foundation in React, JS, HTML, and CSS, and
               proficient in graphic design tools like Photoshop and Illustrator.
             </p>
-            <p style={{ marginTop: "20px" }}>Education</p>
+            <p style={{ marginTop: "10px" }}>Education</p>
             <EducationTimeline />
           </div>
         </section>
