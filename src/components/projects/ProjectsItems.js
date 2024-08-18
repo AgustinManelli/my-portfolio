@@ -28,22 +28,6 @@ function ProjectsItems(props) {
 
   return (
     <div className="ProjectItemsContainer">
-      {/* <p className="ProjectItemsDate">{props.year}</p> */}
-      {/* <div
-        className="ProjectItemsDot"
-        style={
-          showCircle
-            ? {
-                backgroundColor: `${props.color}`,
-                boxShadow: `0px 0px 20px 3px ${props.color}`,
-              }
-            : {
-                backgroundColor: `${props.color}`,
-                boxShadow: `0px 0px 20px 1px ${props.color}`,
-                filter: "grayscale(80%)",
-              }
-        }
-      ></div> */}
       <section
         className="ProjectItemsContentContainer"
         onMouseMove={handleMouseMove}
@@ -99,7 +83,7 @@ function ProjectsItems(props) {
               ))}
             </section>
             <section className="ProjectItemsContent_buttons">
-              {props.visit ? (
+              {props.link && (
                 <a
                   className="ProjectItemsContent_goto"
                   href={props.link}
@@ -111,8 +95,6 @@ function ProjectsItems(props) {
                     style={{ width: "13px", fontWeight: "bold" }}
                   />
                 </a>
-              ) : (
-                ""
               )}
               <Button icon={<AiFillGithub />} link={props.repo} />
             </section>

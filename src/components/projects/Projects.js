@@ -3,7 +3,6 @@ import ProjectsItems from "./ProjectsItems";
 import logo from "../../assets/ISOTIPO.svg";
 import laespumitalogo from "../../assets/laespumita.svg";
 import { FaHeart } from "react-icons/fa";
-import { useState } from "react";
 import bepixel_logobg from "../../assets/BEPIXEL_LOGOBG.svg";
 import bepixel2_logobg from "../../assets/BEPIXEL2_LOGOBG.svg";
 import laespumita_logobg from "../../assets/LAESPUMITA_LOGOBG.svg";
@@ -11,13 +10,11 @@ import impuestar_logobg from "../../assets/IMPUESTAR_LOGOBG.svg";
 import alino_logobg from "../../assets/alinoLogo.svg";
 import alino2_logobg from "../../assets/alinoLogo3.webp";
 function Projects() {
-  const [showCircle, setShowCircle] = useState(false);
   return (
     <section className="ProjectsContainer">
       <header className="ProjectsHeader">
         <h1>My projects</h1>
       </header>
-      {/* <img src={backdeco} style={{ position: "absolute", zIndex: "2" }} /> */}
       <div className="Projects">
         <div className="ProjectsSections">
           <div className="ProjectDotContainer">
@@ -30,9 +27,8 @@ function Projects() {
               year="2024"
               date="apr 12, 2024"
               title="Alino"
-              desc="Todo list with database and login/register"
-              tags={["NextJS", "React", "FramerMotion", "Supabase"]}
-              visit={true}
+              desc="To-do app with database and login/register"
+              tags={["Next.js", "React", "Supabase", "FramerMotion", "Zustand"]}
               link="https://alino.vercel.app/"
               repo="https://github.com/AgustinManelli/alino"
               color="#7D189D"
@@ -46,7 +42,6 @@ function Projects() {
               title="La espumita"
               desc="Calculator web application for business"
               tags={["React", "FramerMotion", "Lightweight Charts"]}
-              visit={true}
               link="https://laespumita.vercel.app/"
               repo="https://github.com/AgustinManelli/laespumita"
               color="#008fd2"
@@ -67,7 +62,6 @@ function Projects() {
               title="bepixel"
               desc="Website for graphic design agency with tools search engine"
               tags={["React", "Supabase", "FramerMotion", "i18next"]}
-              visit={true}
               link="https://bepixel.vercel.app/"
               repo="https://github.com/AgustinManelli/bepixel"
               color="#e10098"
@@ -89,8 +83,6 @@ function Projects() {
               title="My protfolio"
               desc="My own portfolio created with some technologies from my TechStack"
               tags={["React", "FramerMotion", "i18next"]}
-              visit={false}
-              link={undefined}
               repo="https://github.com/AgustinManelli/my-portfolio"
               color="#bc03ff"
               logobg={bepixel_logobg}
@@ -119,10 +111,8 @@ function Projects() {
               year="2022"
               date="may 1, 2022"
               title="Impuestar keylogger"
-              desc="Keylogger encapsulated in tax calculation application for Argentina"
+              desc="Keylogger encapsulated in tax calculation application for Argentina with Python"
               tags={["Python", "Tkinter"]}
-              visit={false}
-              link={undefined}
               repo="https://github.com/AgustinManelli/Impuestarkeylogger"
               color="#0055ff"
               logobg={impuestar_logobg}
