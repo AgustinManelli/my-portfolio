@@ -3,10 +3,10 @@ import HomeHeader from "./components/home/HomeHeader";
 import Projects from "./components/projects/Projects";
 import Certifications from "./components/certifications/Cerifications";
 import Footer from "./components/footer/Footer";
-import Lenis from "@studio-freight/lenis";
+//import Lenis from "@studio-freight/lenis";
 
 function App() {
-  const lenis = new Lenis({
+  /*const lenis = new Lenis({
     smoothWheel: true,
     duration: 1.2,
   });
@@ -16,7 +16,7 @@ function App() {
     requestAnimationFrame(raf);
   }
 
-  requestAnimationFrame(raf);
+  requestAnimationFrame(raf);*/
   return (
     <>
       <HomeHeader />
