@@ -29,7 +29,7 @@ function Projects() {
               title="Alino"
               desc="To-do app with database and login/register"
               tags={["Next.js", "React", "Supabase", "FramerMotion", "Zustand"]}
-              link="https://alino.vercel.app/"
+              link="https://alino.online"
               repo="https://github.com/AgustinManelli/alino"
               color="#7D189D"
               logobg={alino2_logobg}
