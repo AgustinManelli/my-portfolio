@@ -27,8 +27,8 @@ function Projects() {
               year="2024"
               date="apr 12, 2024"
               title="Alino"
-              desc="To-do app with database and login/register"
-              tags={["Next.js", "React", "Supabase", "FramerMotion", "Zustand"]}
+              desc="Alino is a modern To-Do app featuring user authentication, a dynamic database, and smooth animations, built to enhance task management efficiency."
+              tags={["Next.js", "React", "Supabase", "Motion", "Zustand"]}
               link="https://alino.online"
               repo="https://github.com/AgustinManelli/alino"
               color="#7D189D"
@@ -40,7 +40,7 @@ function Projects() {
               year="2024"
               date="jan 4, 2024"
               title="La espumita"
-              desc="Calculator web application for business"
+              desc="La Espumita is a web-based calculator application for business purposes. Note: the app is not optimized for mobile devices."
               tags={["React", "FramerMotion", "Lightweight Charts"]}
               link="https://laespumita.vercel.app/"
               repo="https://github.com/AgustinManelli/laespumita"

@@ -39,8 +39,10 @@ function HomeHeader() {
           <div className="homeHeaderSubSections">
             <ImageClipPath src={me} alt="image" w="150px" h="150px" />
             <p className="subSectionDescription">
-              I have a strong foundation in React, JS, HTML, and CSS, and
-              proficient in graphic design tools like Photoshop and Illustrator.
+              I have a strong foundation in React and Next.js, knowledge of
+              relational databases such as PostgreSQL and SQL Server, and
+              proficiency in graphic design tools like Photoshop and
+              Illustrator.
             </p>
             <p style={{ marginTop: "10px" }}>Education</p>
             <EducationTimeline />
