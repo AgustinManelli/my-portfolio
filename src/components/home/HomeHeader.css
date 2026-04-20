@@ -1,6 +1,7 @@
 .headerContainer {
   width: 100vw;
-  height: fit-content;
+  height: calc(100dvh - 60px);
+  min-height: 545px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +183,7 @@ h3 {
 .homeHeaderSubSections {
   width: fit-content;
   height: fit-content;
-  border-radius: 10px;
+  border-radius: 50px;
   backdrop-filter: blur(16px) saturate(1.8);
   display: flex;
   gap: 10px;
@@ -190,7 +191,7 @@ h3 {
   align-items: center;
   text-align: left;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   overflow: hidden;
   max-height: 500px;
   min-height: 350px;
@@ -200,8 +201,17 @@ h3 {
   margin-right: 20px;
 }
 
+.homeHeaderSubSections_title {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 1;
+}
+
 .subSectionDescription {
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .homeHeaderName {
@@ -214,9 +224,12 @@ h3 {
 }
 
 @media screen and (max-width: 815px) {
+  .headerContainer {
+    min-height: 650px;
+  }
   .homeHeaderContainer {
     flex-direction: column;
-    min-height: 650px;
+    min-height: 650;
   }
   .homeHeaderSections {
     height: fit-content;
@@ -224,7 +237,7 @@ h3 {
   .homeHeaderSubSections {
     margin-top: 25px;
     margin-bottom: 25px;
-    max-width: 300px;
+    max-width: 500px;
     padding: 20px;
   }
   .homeHeaderPattern {

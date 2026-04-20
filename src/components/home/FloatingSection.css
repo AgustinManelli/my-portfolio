@@ -23,9 +23,11 @@
 .homeHeaderFooterSectionTitle {
   position: absolute;
   color: #fff;
-  top: -25px;
+  top: -20px;
   margin: 0;
   opacity: 0.2;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .homeHeaderFooterIcon {

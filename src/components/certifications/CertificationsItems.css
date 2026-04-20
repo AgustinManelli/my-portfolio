@@ -2,7 +2,7 @@
   width: fit-content;
   height: fit-content;
   padding: 1px;
-  border-radius: 10px;
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(30px) saturate(200%);
@@ -18,12 +18,9 @@
   right: -100px;
   z-index: 1;
   opacity: 0.3;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.CertificationsItemsContainer:hover .CertificationsItemsCircle {
-  transform: scale(200%);
-  opacity: 0.1;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .CertificationsItems {
@@ -31,7 +28,7 @@
   width: 200px;
   height: 200px;
   background-color: rgb(0, 0, 0, 50%);
-  border-radius: 10px;
+  border-radius: 30px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -41,6 +38,7 @@
 .CertificationsItems img {
   max-height: 45px;
   max-width: 100px;
+  opacity: 0.6;
 }
 
 .CertificationsItemsIMGTXT {
@@ -50,28 +48,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .CertificationsItemsTime {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   margin: 10px;
   color: rgb(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .CertificationsItemsTitle {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  opacity: 0.9;
 }
 
 .CertificationsItemsId {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 5px;
+  left: 5px;
   margin: 10px;
   color: rgb(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .certificationTech {

@@ -29,8 +29,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .EducationTimelineElement {
   position: relative;
@@ -40,19 +38,21 @@
 }
 .EducationTimelineElement_time {
   position: absolute;
-  left: -100px;
+  left: calc(-100% - 30px);
   font-size: 10px;
   font-weight: 500;
-  color: rgb(98, 98, 98, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+  text-align: right;
+  width: 100%;
 }
 .EducationTimelineElement_title {
   width: 0%;
-  font-size: 14px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  font-size: 13px;
   overflow: hidden;
   white-space: nowrap;
   animation: TimelineAnimation2 1s forwards;
+  text-align: left;
+  font-weight: 600;
 }
 @keyframes TimelineAnimation2 {
   0% {
